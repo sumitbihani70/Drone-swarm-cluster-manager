@@ -1,0 +1,19 @@
+.shape{
+  border-radius:1rem;
+}
+
+h1{
+  text-align: center;
+  font-family: DM Sans;
+  height: 10cm;
+  font-weight: bold;
+}
+
+button{
+  color: #5b61f4;
+  font-family: DM Sans;
+  font-weight: bold;
+}
+p{
+  color: #000000;
+}
