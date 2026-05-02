@@ -1,50 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width,intial-scale=1.0">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team A Workflow</title>
+  </head>
+  <body>
+    <!-- Main workflow card -->
+    <main>
+      <section>
+        <!-- Left and right workflow connection points -->
+        <div>
+          <span>Left connector</span>
+        </div>
+        <div>
+          <span>Right connector</span>
+        </div>
 
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="card.css">
-</head>
-<body>
+        <!-- Top header -->
+        <header>
+          <!-- Workflow icon card -->
+          <button type="button" aria-label="Workflow node">
+            Workflow Icon
+          </button>
 
-    <h1> <i data-lucide="drone" class="drone"></i> 
-        Team A
-    </h1> 
-     <p><h3> <i data-lucide="cloud-upload" class="upload"></i> 
-        Upload Files
-    
-        <i data-lucide="info" class="info"></i>
-         Details
-     </h3>
-        Upload mission files, data, images, etc.</p>
+          <!-- Page title -->
+          <h1>Team A</h1>
 
+          <!-- Header actions -->
+          <div>
+            <span>Status: Ready</span>
+            <button type="button" aria-label="More options">
+              More
+            </button>
+          </div>
+        </header>
 
-        <div class="container">
+        <!-- Main content area -->
+        <div>
+          <!-- Upload files section -->
+          <section>
+            <header>
+              <span>Upload Icon</span>
+              <div>
+                <h2>Upload Files</h2>
+                <p>Upload mission files, data, images, etc.</p>
+              </div>
+            </header>
 
-  <div id="dropZone" class="drop-zone">
-    <i data-lucide="folder-up" class="folder"></i>
-    Drag & drop files here
-  </div>
-  <div class="box"><h2>Drones</h2></div>
+            <!-- Drag and drop upload box -->
+            <label>
+              <input type="file" multiple />
+              <span>Folder Icon</span>
+              <strong>Drag &amp; drop files here</strong>
+              <small>or click to browse</small>
+            </label>
 
+            <!-- Divider -->
+            <div>
+              <span>or</span>
+            </div>
 
+            <!-- Choose files button -->
+            <button type="button">
+              <span>Upload Icon</span>
+              Choose Files
+            </button>
+          </section>
 
+          <!-- Details section -->
+          <section>
+            <header>
+              <span>Info Icon</span>
+              <h2>Details</h2>
+            </header>
 
-</div>
+            <!-- Drones card -->
+            <article>
+              <header>
+                <span>Drones Icon</span>
+                <div>
+                  <h3>Drones</h3>
+                  <p>Drone 1, Drone 2</p>
+                </div>
+              </header>
 
-        
+              <!-- Drones status information -->
+              <div>
+                <div>
+                  <span>Status</span>
+                  <strong>Active</strong>
+                </div>
 
-     <button>
-       <div data-lucide="upload" class="file"></div>
-       Choose files
-     </button>
-     
-
-     <script src="card.js"></script>
-</body>
+                <div>
+                  <span>Last Updated</span>
+                  <time datetime="2025-05-19T11:30">19 May 2025, 11:30 AM</time>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
