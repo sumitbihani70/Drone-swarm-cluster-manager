@@ -4,18 +4,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device-width,intial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <title>My First Webpage</title>
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
 
-     <h1>Team A</h1>
-     <button>
-        Choose files
-     </button>
-     <p>Upload mission files, data, images, etc.</p>
+    <h1> <i data-lucide="drone" class="drone"></i> 
+        Team A
+    </h1> 
+     <p><h3> <i data-lucide="cloud-upload" class="upload"></i> 
+        Upload Files
+    
+        <i data-lucide="info" class="info"></i>
+         Details
+     </h3>
+        Upload mission files, data, images, etc.</p>
 
-     <script src="script.js"></script>
+
+        <div class="container">
+
+  <div id="dropZone" class="drop-zone">
+    <i data-lucide="folder-up" class="folder"></i>
+    Drag & drop files here
+  </div>
+  <div class="box"><h2>Drones</h2></div>
+
+
+
+
+</div>
+
+        
+
+     <button>
+       <div data-lucide="upload" class="file"></div>
+       Choose files
+     </button>
+     
+
+     <script src="card.js"></script>
 </body>
 </html>
