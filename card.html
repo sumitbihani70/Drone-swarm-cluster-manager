@@ -1,13 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team A Workflow</title>
+    <link rel="stylesheet" href="card.css" />
   </head>
   <body>
+
     <main>
       <section>
+        
         <div>
           <span>Left connector</span>
         </div>
@@ -15,17 +18,17 @@
           <span>Right connector</span>
         </div>
 
-
+      
         <header>
         
           <button type="button" aria-label="Workflow node">
             Workflow Icon
           </button>
 
-    
+          
           <h1>Team A</h1>
 
-      
+          
           <div>
             <span>Status: Ready</span>
             <button type="button" aria-label="More options">
@@ -34,7 +37,7 @@
           </div>
         </header>
 
-        
+    
         <div>
           
           <section>
@@ -46,34 +49,37 @@
               </div>
             </header>
 
-      
-            <label>
-              <input type="file" multiple />
-              <span>Folder Icon</span>
-              <strong>Drag & drop files here</strong>
-              <small>or click to browse</small>
-            </label>
+            
+            <label class="drop-box" id="dropBox">
+  <input type="file" id="fileInput" multiple />
 
-            <!-- Divider -->
-            <div>
+  <span>Folder Icon</span>
+
+  <strong>Drag &amp; drop files here</strong>
+  <small>or click to browse</small>
+</label>
+
+
+            
+            <div class="divider">
               <span>or</span>
             </div>
 
-        
+          
             <button type="button">
               <span>Upload Icon</span>
               Choose Files
             </button>
           </section>
 
-        
+          
           <section>
             <header>
               <span>Info Icon</span>
               <h2>Details</h2>
             </header>
 
-          
+
             <article>
               <header>
                 <span>Drones Icon</span>
@@ -83,7 +89,7 @@
                 </div>
               </header>
 
-              
+
               <div>
                 <div>
                   <span>Status</span>
@@ -100,5 +106,6 @@
         </div>
       </section>
     </main>
+    <script src="style.js"></script>
   </body>
 </html>
